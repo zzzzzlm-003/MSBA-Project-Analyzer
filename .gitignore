@@ -5,6 +5,7 @@ data/**/*.pdf
 data/projects/
 data/project_texts/*.txt
 data/project_texts/all_projects_text.txt
+data/project_texts/projects_index.json
 
 # 分析结果（包含个人分析）
 data/output/*.xlsx
@@ -64,3 +65,6 @@ desktop.ini
 *.bak
 *.backup
 *~
+
+# LinkedIn自动投简历相关（不属于这个项目）
+public/apply-bot.gif

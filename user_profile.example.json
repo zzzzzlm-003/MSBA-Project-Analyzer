@@ -1,0 +1,51 @@
+{
+  "name": "Your Name",
+  "background": {
+    "education": {
+      "undergraduate": "Finance",
+      "graduate": "MSBA (Business Analytics)",
+      "other_certifications": []
+    },
+    "work_experience": [
+      {
+        "role": "Equity Research",
+        "company": "Company Name",
+        "duration": "Duration"
+      }
+    ],
+    "technical_skills": {
+      "programming": ["Python", "SQL"],
+      "ml_ai": "Basic (not advanced)",
+      "other": []
+    },
+    "interests": [
+      "Finance-related projects",
+      "Investment analysis",
+      "Risk management"
+    ]
+  },
+  "preferences": {
+    "preferred_industries": [
+      "Finance",
+      "Investment Management",
+      "FinTech",
+      "Real Estate"
+    ],
+    "avoid_industries": [
+      "Healthcare",
+      "Manufacturing"
+    ],
+    "skill_level": {
+      "ml": "basic",
+      "deep_learning": "none",
+      "computer_vision": "none"
+    },
+    "bidding_strategy": {
+      "total_points": 2000,
+      "min_projects": 20,
+      "max_per_project": 600,
+      "preferred_range": "300-600"
+    }
+  }
+}
+
