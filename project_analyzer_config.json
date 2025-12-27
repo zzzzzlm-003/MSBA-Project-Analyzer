@@ -1,0 +1,10 @@
+{
+  "google_drive_links": [
+    "在此处添加Google Drive链接，每行一个",
+    "例如: https://drive.google.com/file/d/xxxxxxxxxxxxx/view?usp=sharing"
+  ],
+  "openai_model": "gpt-4o-mini",
+  "max_text_length": 8000,
+  "output_formats": ["excel", "json"]
+}
+

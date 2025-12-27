@@ -1,0 +1,12 @@
+# 确保文本文件使用正确的换行符
+* text=auto
+
+# 明确标记二进制文件
+*.pdf binary
+*.xlsx binary
+*.xls binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+

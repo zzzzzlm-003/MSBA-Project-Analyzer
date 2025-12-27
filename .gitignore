@@ -1,0 +1,66 @@
+# 隐私和敏感数据
+# PDF文件（项目文档、简历等）
+*.pdf
+data/**/*.pdf
+data/projects/
+data/project_texts/*.txt
+data/project_texts/all_projects_text.txt
+
+# 分析结果（包含个人分析）
+data/output/*.xlsx
+data/output/analysis_results.json
+data/output/analysis_request.json
+
+# 个人配置文件
+.env
+.env.local
+.env.*.local
+
+# 个人数据文件
+data/resume-meta.json
+data/applied.json
+data/logs.json
+data/knowledge.json
+data/job-filters.json
+data/monitored-companies.json
+data/prompts.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# 备份文件
+*.bak
+*.backup
+*~

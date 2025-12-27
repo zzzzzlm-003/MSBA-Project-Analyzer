@@ -1,0 +1,16 @@
+{
+  "google_drive_links": [
+    "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE"
+  ],
+  "openai_model": "gpt-4o-mini",
+  "output_format": ["excel", "json"],
+  "analysis_criteria": {
+    "background": {
+      "education": "Finance undergraduate, MSBA graduate",
+      "experience": "Equity Research",
+      "interests": "Finance-related projects",
+      "technical_skills": "ML basics, not advanced"
+    }
+  }
+}
+

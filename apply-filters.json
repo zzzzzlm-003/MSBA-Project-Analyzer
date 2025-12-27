@@ -1,0 +1,199 @@
+{
+  "blacklist": {
+    "companies": [
+      "Company A Inc",
+      "Sketchy Outsourcing Corp"
+    ],
+    "keywords": [
+      "unpaid internship",
+      "commission only",
+      "must work weekends",
+      "on-call 24/7",
+      "cryptocurrency startup"
+    ],
+    "locations": [
+      "Remote (Nigeria)",
+      "Offshore only"
+    ],
+    "industries": [
+      "Multi-level Marketing",
+      "Gambling",
+      "Crypto Ponzi"
+    ]
+  },
+
+  "whitelist": {
+    "companies": [
+      "Google",
+      "Meta",
+      "Apple",
+      "Microsoft",
+      "Amazon",
+      "Stripe",
+      "Notion",
+      "Linear"
+    ],
+    "keywords": [
+      "remote-first",
+      "flexible hours",
+      "async communication",
+      "engineering-driven",
+      "work-life balance"
+    ],
+    "locations": [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Germany",
+      "Netherlands",
+      "Remote (US/EU)"
+    ]
+  },
+
+  "salary": {
+    "min": 100000,
+    "max": 250000,
+    "target": 150000,
+    "currency": "USD",
+    "includeEquity": true,
+    "minEquity": "0.1%"
+  },
+
+  "workType": {
+    "remote": true,
+    "hybrid": true,
+    "onsite": false,
+    "acceptOvertimeOccasionally": true,
+    "maxOnsiteDaysPerWeek": 2
+  },
+
+  "jobRequirements": {
+    "minYearsExperience": 3,
+    "maxYearsExperience": 10,
+    "levels": [
+      "Mid-level",
+      "Senior",
+      "Staff",
+      "Principal"
+    ],
+    "excludeLevels": [
+      "Intern",
+      "Entry-level",
+      "Junior"
+    ]
+  },
+
+  "techStack": {
+    "mustHave": [
+      "React",
+      "TypeScript",
+      "Node.js"
+    ],
+    "niceToHave": [
+      "Next.js",
+      "GraphQL",
+      "PostgreSQL",
+      "AWS",
+      "Kubernetes"
+    ],
+    "dealBreakers": [
+      "PHP",
+      "jQuery",
+      "AngularJS",
+      "Legacy codebase only",
+      "No version control"
+    ]
+  },
+
+  "companyPreferences": {
+    "sizes": [
+      "Medium (100-500)",
+      "Large (500+)"
+    ],
+    "types": [
+      "Product Company",
+      "SaaS",
+      "Tech Startup",
+      "Established Tech"
+    ],
+    "excludeTypes": [
+      "Outsourcing",
+      "Body Shop",
+      "Agency",
+      "Consulting"
+    ],
+    "fundingStage": [
+      "Series B+",
+      "Profitable",
+      "Public"
+    ],
+    "minFunding": "10M USD"
+  },
+
+  "autoRules": {
+    "autoApply": {
+      "enabled": false,
+      "conditions": "Salary > 150K AND (Remote OR Hybrid) AND Company in whitelist"
+    },
+    "autoSkip": {
+      "enabled": true,
+      "conditions": "Salary < 100K OR Company in blacklist OR Contains dealbreaker tech"
+    },
+    "requireManualReview": [
+      "Salary not disclosed",
+      "Equity-heavy compensation",
+      "Vague job description",
+      "Early-stage startup (Seed/Series A)"
+    ]
+  },
+
+  "benefits": {
+    "mustHave": [
+      "Health insurance",
+      "401(k) or pension",
+      "Paid time off (PTO)"
+    ],
+    "preferred": [
+      "Stock options/RSUs",
+      "Annual bonus",
+      "Professional development budget",
+      "Home office stipend",
+      "Unlimited PTO",
+      "Parental leave",
+      "Gym membership"
+    ],
+    "dealBreakers": [
+      "No health insurance",
+      "Less than 10 days PTO",
+      "No sick leave"
+    ]
+  },
+
+  "visa": {
+    "requiresSponsorship": false,
+    "currentStatus": "H1B / Green Card / Citizen",
+    "acceptsRemoteInternational": true,
+    "preferredCountries": [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Germany"
+    ]
+  },
+
+  "other": {
+    "maxCommuteTimeMinutes": 45,
+    "acceptBusinessTravel": "Occasionally (< 20%)",
+    "acceptProbationPeriod": true,
+    "maxProbationMonths": 3,
+    "preferredTeamSize": "10-50 people",
+    "mustHaveModernDevTools": true,
+    "workingHours": {
+      "timezone": "PST / EST",
+      "acceptAsyncWork": true,
+      "maxOverlapRequiredHours": 4
+    }
+  },
+
+  "notes": "AI Assistant: Please use these preferences to evaluate job postings. Score each position and recommend whether I should apply, skip, or manually review. Consider all factors but prioritize: Remote work, Salary range, Tech stack match, and Company reputation."
+}

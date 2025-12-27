@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "apply-bot-mcp": {
+      "command": "npx",
+      "args": [
+        "apply-bot-mcp",
+        "run-mcp-server",
+        "--extension"
+      ]
+    }
+  }
+}
