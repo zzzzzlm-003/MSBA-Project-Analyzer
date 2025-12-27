@@ -39,13 +39,34 @@ A powerful tool to analyze and evaluate multiple project proposals for course se
 
 ## Usage
 
-### Step 1: Prepare PDF Files
+### Step 1: Configure Your Profile
+
+Create your personal profile by copying the example file:
+
+```bash
+# Windows
+copy user_profile.example.json user_profile.json
+
+# Mac/Linux
+cp user_profile.example.json user_profile.json
+```
+
+Then edit `user_profile.json` and fill in:
+- Your educational background (undergraduate, graduate degrees)
+- Work experience
+- Technical skills level
+- Industry preferences
+- Bidding strategy (total points, min/max projects, etc.)
+
+**Note**: `user_profile.json` is excluded from Git to protect your privacy.
+
+### Step 2: Prepare PDF Files
 
 Place your project PDF files in the `data/projects/` directory. The system will automatically process all PDF files in this directory.
 
 **Note**: The `data/projects/` directory is excluded from Git to protect privacy. Create it manually if it doesn't exist.
 
-### Step 2: Extract Text from PDFs
+### Step 3: Extract Text from PDFs
 
 Run the PDF text extraction script:
 
@@ -56,30 +77,23 @@ node extract_pdfs.js
 This will:
 - Extract text from all PDF files in `data/projects/`
 - Save extracted text to `data/project_texts/`
-- Generate an index file (`projects_index.json`) with metadata
 
-### Step 3: Analyze Projects
+### Step 4: Generate Personalized Analysis
 
-The analysis can be done in two ways:
-
-**Option A: Using AI Assistant (Recommended)**
-- The AI assistant will read the extracted text files
-- Automatically extract key information
-- Generate structured analysis with ratings and recommendations
-
-**Option B: Using OpenAI API (if configured)**
-- Set up your OpenAI API key in `.env` file
-- Run the Python analysis script (if available)
-
-### Step 4: Generate Excel Report
-
-After analysis is complete, generate the Excel report:
+Run the personalized analysis tool:
 
 ```bash
-node generate_excel_from_json.js
+node analyze_with_profile.js
 ```
 
-The Excel file will be saved in `data/output/` with a timestamp.
+This will:
+- Read your `user_profile.json` configuration
+- Analyze all projects based on your background and preferences
+- Generate personalized suitability ratings (1-5 stars)
+- Provide bidding score recommendations
+- Export results to both JSON and Excel formats
+
+The output files will be saved in `data/output/` with timestamps.
 
 ## Project Structure
 
@@ -113,17 +127,17 @@ Each project analysis includes:
 
 ## Configuration
 
-### Customizing Analysis Criteria
+### Customizing Your Profile
 
-Edit the analysis logic in the AI assistant prompts or analysis scripts to match your specific background and interests.
+Edit `user_profile.json` to customize the analysis criteria:
 
-### Background Information
+1. **Education Background**: Your degrees and majors
+2. **Work Experience**: Relevant work experience
+3. **Technical Skills**: Programming languages, ML/AI level
+4. **Industry Preferences**: Preferred industries and industries to avoid
+5. **Bidding Strategy**: Total points, minimum projects, max points per project
 
-The system evaluates projects based on:
-- Your educational background (e.g., Finance undergraduate, MSBA graduate)
-- Your work experience (e.g., Equity Research)
-- Your interests (e.g., Finance-related projects)
-- Your technical skills (e.g., ML basics, not advanced)
+The analysis will automatically adjust based on your profile settings.
 
 ## Privacy & Security
 
