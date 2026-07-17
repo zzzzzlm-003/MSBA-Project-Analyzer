@@ -13,8 +13,8 @@ const __dirname = path.dirname(__filename);
 
 // 配置
 const SOURCE_DIR = 'E:\\备份资料\\IEOR 4524 Spring 2026-20251227T052940Z-3-001\\IEOR 4524 Spring 2026';
-const TEXTS_DIR = path.join(__dirname, 'data', 'project_texts');
-const PROJECTS_DIR = path.join(__dirname, 'data', 'projects');
+const TEXTS_DIR = path.join(__dirname, '..', 'data', 'project_texts');
+const PROJECTS_DIR = path.join(__dirname, '..', 'data', 'projects');
 
 // 确保目录存在
 if (!fs.existsSync(TEXTS_DIR)) {

@@ -1,8 +1,8 @@
 {
-  "name": "apply-bot",
+  "name": "msba-project-analyzer",
   "version": "1.0.0",
   "type": "module",
-  "description": "AI-powered job application filter tool with visual interface",
+  "description": "AI tool that scores project proposals against a user profile (PDF -> LLM -> ranked Excel)",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

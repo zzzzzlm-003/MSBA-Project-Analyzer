@@ -7,8 +7,8 @@ Thank you for your interest in contributing to Apply Bot! We welcome contributio
 1. **Fork the repository** - Click the "Fork" button at the top right of the repository page
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/apply-bot.git
-   cd apply-bot
+   git clone https://github.com/YOUR_USERNAME/MSBA-Project-Analyzer.git
+   cd MSBA-Project-Analyzer
    ```
 3. **Install dependencies**
    ```bash
@@ -34,7 +34,7 @@ Thank you for your interest in contributing to Apply Bot! We welcome contributio
    ```bash
    git push origin feature/your-feature-name
    ```
-2. Go to the [original repository](https://github.com/ZackHu-2001/apply-bot)
+2. Go to the [original repository](https://github.com/zzzzzlm-003/MSBA-Project-Analyzer)
 3. Click "New Pull Request"
 4. Select your fork and branch
 5. Describe your changes clearly in the PR description
@@ -58,7 +58,7 @@ Use conventional commit format:
 ## Reporting Issues
 
 Found a bug or have a feature request?
-1. Check if the issue already exists in [Issues](https://github.com/ZackHu-2001/apply-bot/issues)
+1. Check if the issue already exists in [Issues](https://github.com/zzzzzlm-003/MSBA-Project-Analyzer/issues)
 2. If not, create a new issue with a clear description
 3. Include steps to reproduce (for bugs)
 4. Add screenshots if helpful

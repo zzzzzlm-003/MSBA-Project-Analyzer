@@ -1,6 +1,11 @@
-# Project Analyzer
+# MSBA Project Analyzer
 
-A powerful tool to analyze and evaluate multiple project proposals for course selection and bidding. This system helps you extract key information from PDF project documents, evaluate their suitability based on your background, and generate structured analysis reports.
+A tool to analyze and evaluate multiple project proposals for course selection and bidding. This system helps you extract key information from PDF project documents, evaluate their suitability based on your background, and generate structured analysis reports.
+
+<!-- TODO: add results screenshot -->
+![Analysis results](docs/screenshot-results.png)
+
+> **Which implementation to use?** The **Node.js scripts are the default** and match the workflow below. A parallel Python implementation ([project_analyzer.py](project_analyzer.py), plus variants in `scripts/`) is kept as **legacy** — it covers the same PDF → AI → Excel flow but is no longer the maintained path.
 
 ## Features
 
@@ -23,8 +28,8 @@ A powerful tool to analyze and evaluate multiple project proposals for course se
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd apply-bot-main
+   git clone https://github.com/zzzzzlm-003/MSBA-Project-Analyzer.git
+   cd MSBA-Project-Analyzer
    ```
 
 2. **Install Node.js dependencies**
@@ -71,7 +76,7 @@ Place your project PDF files in the `data/projects/` directory. The system will 
 Run the PDF text extraction script:
 
 ```bash
-node extract_pdfs.js
+node scripts/extract_pdfs.js
 ```
 
 This will:
@@ -98,16 +103,20 @@ The output files will be saved in `data/output/` with timestamps.
 ## Project Structure
 
 ```
-apply-bot-main/
+MSBA-Project-Analyzer/
 ├── data/
 │   ├── projects/          # PDF files (not in Git)
 │   ├── project_texts/     # Extracted text files (not in Git)
 │   └── output/            # Analysis results (not in Git)
-├── extract_pdfs.js        # PDF text extraction
-├── generate_excel_from_json.js  # Excel generation
+├── analyze_with_profile.js  # Main entry (Node.js, default)
+├── project_analyzer.py      # Main entry (Python, legacy)
+├── scripts/                 # Supporting & legacy one-off scripts
+│   └── extract_pdfs.js      # PDF text extraction (Step 3)
 ├── package.json
 └── README.md
 ```
+
+**Note on `scripts/`**: everything in `scripts/` besides `extract_pdfs.js` is a legacy one-off (earlier analysis variants, batch helpers) kept for reference; some may need path adjustments to run from the new location.
 
 ## Analysis Output
 
